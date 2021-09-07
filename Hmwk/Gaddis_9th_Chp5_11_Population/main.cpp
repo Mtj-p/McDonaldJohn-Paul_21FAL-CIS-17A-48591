@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
     
     cout<<"Starting number of organisms(>2): ";
     cin>>organ;
-    cout<<"Average Daily Population Increase(>0): ";
+    cout<<"Average daily population Increase(>0): ";
     cin>>dailypop;
     cout<<"Number of observed days for population multiplication(>1): ";
     cin>>days;
