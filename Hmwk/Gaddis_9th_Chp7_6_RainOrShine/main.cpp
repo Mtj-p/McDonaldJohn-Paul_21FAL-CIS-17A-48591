@@ -17,11 +17,11 @@ using namespace std;
 //Global Constants
 //Universal Math, Physics, Conversions, Higher Dimensions
 //Prototypes
-void wrtFile(fstream &,char[]);                 //writing data
+void wrtFile(fstream &,char[]);               //writing data
 void rdFile(fstream &,string,char[][30]);     //reading data
 void prntData(char [][30]);                   //printing data
-string stats(char[][30],char[][3]);                //examining statistics
-void prntStat(char[][3]);                        //printing statistics
+string stats(char[][30],char[][3]);           //examining statistics
+void prntStat(char[][3]);                     //printing statistics
 
 //Execution Begins Here
 int main(int argc, char** argv) {
