@@ -2,7 +2,7 @@
  * file: Gaddis_9th_Chp6_7_CelsiusTempTable
  * Author: John-Paul McDonald
  * Date: 09/06/2021
- * Purpose: 
+ * Purpose: Celsius to Temp Table Generation utilizing a Function
  */
 
 //System Libraries
