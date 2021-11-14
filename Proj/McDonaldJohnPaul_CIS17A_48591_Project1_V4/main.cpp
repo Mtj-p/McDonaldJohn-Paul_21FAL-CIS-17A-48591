@@ -36,7 +36,20 @@ int main(int argc, char** argv) {
     
     vector<int> deck;
     vector<int> hand;
-    Game(deck,hand);
+    bool playing = true;
+    int plays=0;
+    while(playing==true){
+        cout<<"\nWelcome to Blackjack. \nDo you want to play a game?\n(1 yes | 0 no): ";
+        cin>>plays;
+        cin.clear();
+        if(plays>=1){
+            Game(deck,hand);
+            hand.clear();
+        }
+        if(plays<=0){
+            playing=false;
+        }
+    }
     //Display the results, verify inputs
     
     //Clean up and exit
@@ -46,18 +59,22 @@ int main(int argc, char** argv) {
 
 void Game(vector<int>& deck,vector<int>& hand){
     vector<int> dhand;
-    bool winner = false;
     bool dwinner = false;
+    bool winner = false;
     bool ingame = true;
     bool bust = false;
+    bool dbust = false;
     int hit = 1;
     int total=0;
+    int dtotal=0;
     int newcard=0;
+    int dnewcard=0;
     do{
         if(deck.size()<100){
             addDecks(deck);
         }
-        cout<<"~~Starting new game~~ \n";
+        cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~Starting new game~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        hand.clear();
         Deal(hand,deck);
         cout<<"Your hand: \n";
         CardDisplay(hand[0]%12,hand[0]%4);
@@ -97,12 +114,54 @@ void Game(vector<int>& deck,vector<int>& hand){
         cout<<"Busted!"<<endl;
     }
     if(winner==true){
-        cout<<"Winner Winner Chicken Dinner! Black Jack!";
+        cout<<"Winner Winner Chicken Dinner! 21!\n";
     }
     if(bust!=true&&winner!=true){
-        cout<<setw(22)<<"Standing at: "<<total<<endl;     
+        cout<<setw(22)<<"Standing at: "<<total<<endl;
+        cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~Dealer's Draw~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         
+        cout<<"Dealers hand: \n";
+        Deal(dhand,deck);
+        CardDisplay(dhand[0]%12,dhand[0]%4);
+        CardDisplay(dhand[1]%12,dhand[1]%4);
+        dtotal=Check(dhand);
+        cout<<setw(22)<<"Dealer's total: "<<dtotal<<endl;
+        while(dtotal<17){
+            Hitme(dhand,deck);
+            dtotal=Check(dhand);
+            dnewcard=dhand.size();
+            cout<<"dnewcard "<<dnewcard<<endl;
+            cout<<"dtotal "<<dtotal<<endl;
+            for(int i=0;i<dnewcard;i++){
+                CardDisplay(dhand[i]%12,dhand[i]%4);
+            }
+            cout<<setw(22)<<"Dealer's Total: "<<dtotal<<endl;
+        }
+        if(dtotal==21||dtotal>total){
+            dwinner=true;            
+        }
+        if(dtotal>21){
+            dbust=true;
+            dwinner=false;
+        }
     }
+    cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+    if(dwinner==true){
+        cout<<"~~~~~~~~~~~Dealer Wins~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        cout<<"      Your "<<total<<" vs Dealer's "<<dtotal;
+    }
+    if(dbust==true){
+        cout<<"~~~~~~~~~~~Dealer Bust~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        cout<<"      Dealer's total "<<dtotal<<"."<<endl;
+    }
+    if(total==dtotal){
+        cout<<"~~~~~~~~~~~~Draw game~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        cout<<"      Your "<<total<<" = Dealer's "<<dtotal;
+    }
+    if(bust!=true&&total>dtotal){
+        cout<<"~~~~~~~~~~Player wins!!~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        if(dtotal!=0){cout<<"      Your "<<total<<" vs Dealer's "<<dtotal;}
+    } 
 }
 
 
@@ -126,14 +185,16 @@ int Check(vector<int> hand){
             countace+=10;
         }
         if(hand[i]%12<9&&hand[i]%12>0){
-            count+=(1+hand[i]%12);
-            countace+=(1+hand[i]%12);        
+            count+=(hand[i]%12);
+            countace+=(hand[i]%12);        
+            count+=1;
+            countace+=1;
         }
     }
     if(countace<22){
         return countace;
     }
-    if(countace>22){
+    if(countace>=22){
         return count;
     }
 }
@@ -207,6 +268,9 @@ void addDecks(vector<int> &stack){
     for(int i=0;i<vec;i++){
         stack.push_back(newdecks[i]);
     }
+    temp=stack.size();
+    temp+=1;
+    cout<<"Deck total: "<<temp<<endl;
 }
 
 
