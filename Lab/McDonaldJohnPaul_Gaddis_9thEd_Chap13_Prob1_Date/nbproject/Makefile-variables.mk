@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU_Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU_Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=cpptemplate
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU_Cygwin-Windows/cpptemplate
+CND_ARTIFACT_NAME_Debug=mcdonaldjohnpaul_gaddis_9thed_chap13_prob1_date
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU_Cygwin-Windows/mcdonaldjohnpaul_gaddis_9thed_chap13_prob1_date
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU_Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=cpptemplate.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU_Cygwin-Windows/package/cpptemplate.tar
+CND_PACKAGE_NAME_Debug=mcdonaldjohnpaulgaddis9thedchap13prob1date.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU_Cygwin-Windows/package/mcdonaldjohnpaulgaddis9thedchap13prob1date.tar
 # Release configuration
 CND_PLATFORM_Release=GNU_Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/GNU_Cygwin-Windows
-CND_ARTIFACT_NAME_Release=cpptemplate
-CND_ARTIFACT_PATH_Release=dist/Release/GNU_Cygwin-Windows/cpptemplate
+CND_ARTIFACT_NAME_Release=mcdonaldjohnpaul_gaddis_9thed_chap13_prob1_date
+CND_ARTIFACT_PATH_Release=dist/Release/GNU_Cygwin-Windows/mcdonaldjohnpaul_gaddis_9thed_chap13_prob1_date
 CND_PACKAGE_DIR_Release=dist/Release/GNU_Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=cpptemplate.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU_Cygwin-Windows/package/cpptemplate.tar
+CND_PACKAGE_NAME_Release=mcdonaldjohnpaulgaddis9thedchap13prob1date.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU_Cygwin-Windows/package/mcdonaldjohnpaulgaddis9thedchap13prob1date.tar
 #
 # include compiler specific variables
 #

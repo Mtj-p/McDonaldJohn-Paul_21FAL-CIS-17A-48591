@@ -14,14 +14,14 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc
+CC=gcc-ar
 CCC=g++
 CXX=g++
 FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=Cygwin_1-Windows
+CND_PLATFORM=GNU_Cygwin-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Release
 CND_DISTDIR=dist
