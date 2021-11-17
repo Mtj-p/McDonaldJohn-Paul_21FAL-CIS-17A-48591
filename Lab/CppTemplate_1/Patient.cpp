@@ -8,16 +8,16 @@
  * File:   Patient.cpp
  * Author: mtjp
  * 
- * Created on November 16, 2021, 6:38 PM
+ * Created on November 16, 2021, 8:32 PM
  */
 
 #include "Patient.h"
 
 Patient::Patient(std::string Name,std::string Address,std::string Phone,std::string Emergency) {
-    Name=Name;
-    Address=Address;
-    Phone=Phone;
-    Emergency=Emergency;
+    this->Name=Name;
+    this->Address=Address;
+    this->Phone=Phone;
+    this->Emergency=Emergency;
 }
     void Patient::setName(string name){
         Name=name;
@@ -46,3 +46,4 @@ std::string Patient::getPhone(){
 std::string Patient::getEmergency(){
     return Emergency;
 }
+

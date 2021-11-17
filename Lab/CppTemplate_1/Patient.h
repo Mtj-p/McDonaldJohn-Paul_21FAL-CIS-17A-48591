@@ -8,7 +8,7 @@
  * File:   Patient.h
  * Author: mtjp
  *
- * Created on November 16, 2021, 3:23 AM
+ * Created on November 16, 2021, 8:32 PM
  */
 
 #ifndef PATIENT_H
@@ -34,6 +34,7 @@ public:
     void setPhone(string);
     void setEmergency(string);
 };
+
 
 #endif /* PATIENT_H */
 
