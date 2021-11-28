@@ -1,0 +1,9 @@
+Assignment 5:
+	Read Chapters 13 and 14, review the corresponding slides.
+	Netbeans projects,         
+	13.1,13.4, 13.5,13.6 and 1 other problem from the chapter.
+	14.1,14.2, 14.3,14.4 and 1 other problem from the chapter.
+	Put in Assignment 5 folder.
+	Remove the build and dist folders
+	Zip the Assignment 5 folder
+	Submit in Canvas.

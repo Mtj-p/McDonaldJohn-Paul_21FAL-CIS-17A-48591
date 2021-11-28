@@ -1,0 +1,8 @@
+Assignment 6:
+	Netbeans projects, Chapter 15 and 16             
+	15.1, 15.4, 15.6
+	16.1, 16.2, 16.3, 16.4, 16.5
+	Put in Assignment 6 folder.
+	Remove the build and dist folders
+	Zip the Assignment 6 folder
+	Submit in Canvas

@@ -1,0 +1,9 @@
+Assignment 4:
+	Read Chapter 12 - Binary Files/Random Access Fiels
+	This homework is about reading and writing to Binary Files, so no Code-E.org work.
+	12.7,12.8, 12.11 and 2 other problems
+	Note:  There are examples in the Github Repository for Reading/Writing both fixed and dynamically sized structures in Binary and Text files.
+	Code in Netbeans.
+	Put in an Assignment  4 folder.
+	Remove the build and dist folders
+	Zip the Assignment 4 folder

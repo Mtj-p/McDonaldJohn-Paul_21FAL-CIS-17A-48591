@@ -1,0 +1,15 @@
+Project 2
+	Use Checkoff sheet to make sure you include all concepts
+	I will post on Github
+	Line limit minimum of 1000 lines with 20% allowed for comments.  Note:  This is just a minimum.
+	I am looking for a complicated game showing your expertise in
+	     	Classes
+	     	Inheritance
+	     	Operator Overloading
+     		Polymorphism
+     		Templates
+	Basically everything in Chapters 13 to 16.  Yes, you can use your first project extended with class concepts.  
+	Replace your structures with these concepts or add these concepts.
+	Also, use doxygen to document your code with UML and flowcharting.
+	Post here in Canvas.
+	Utilize Github and make sure I am a collaborator.  Show progression of development as well as versioning.
