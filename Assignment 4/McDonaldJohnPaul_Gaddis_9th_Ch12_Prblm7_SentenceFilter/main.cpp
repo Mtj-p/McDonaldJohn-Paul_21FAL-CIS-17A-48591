@@ -19,12 +19,12 @@ int main(int argc, char** argv) {
     string file2;
     bool first = true;
     char contents;
-    cout<<"name of file one: testing1 && name of file two: testing2\n";//instructions
+    cout<<"Please use the name of file one: testing1 && name of file two: testing2\n";//instructions
     cout<<"Name of file one: ";//input file one name
     getline(cin,file1);
     cout<<"Name of file two: ";//input file two name
     getline(cin,file2);
-    cout<<"file 1 "<<file1<<" file 2 "<<file2<<endl;//outputs the names of the files for verification
+    cout<<"file 1 "<<file1<<" \nfile 2 "<<file2<<endl;//outputs the names of the files for verification
     ifstream inputFile(file1);//input stream
     ofstream outputFile(file2);//output stream
     while(inputFile){

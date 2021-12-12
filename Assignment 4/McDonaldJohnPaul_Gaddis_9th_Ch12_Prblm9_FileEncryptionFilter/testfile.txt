@@ -1,0 +1,1 @@
+This is a test file. If this program works correctly, the file encryptedfile.txt will be identical to this file except that every character should be +10 in the ASCII code.abcdefghijklmnopqrstuvwxyz1234567890~.\?</\{}|

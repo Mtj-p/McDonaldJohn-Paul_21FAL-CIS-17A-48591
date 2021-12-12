@@ -1,0 +1,8 @@
+Division: West
+Quarter: 4
+Sales: $22.34
+
+Division: Weast
+Quarter: 2
+Sales: $12345.7
+
