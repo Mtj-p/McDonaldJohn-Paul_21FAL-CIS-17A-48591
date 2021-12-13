@@ -7,6 +7,7 @@
 
 //System Libraries
 #include <iostream>
+#include "Essay.h"
 using namespace std;
 
 //User Libraries
@@ -15,16 +16,12 @@ using namespace std;
 //Prototypes
 //Execution Begins Here
 int main(int argc, char** argv) {
-    //Initialize Random Number Seed
-    
-    //Declare Variables
-    cout<<"Hello world";
-    //Initialize Variables
-    
-    //Process the inputs -> outputs
-    
-    //Display the results, verify inputs
-    
-    //Clean up and exit
+    Essay myessay(0.0);
+    Essay friendssay(0.0);
+    friendssay.setEssay(15,16.4,19.4,20.2);
+    myessay.setEssay(29.9,20,18.5,30);
+    cout<<"My score on the essay is a "<<myessay.getScore()<<".\n";
+    cout<<"My friend's score was only a "<<friendssay.getScore()<<".\n";
+    cout<<"At least they passed?\n";
     return 0;
 }

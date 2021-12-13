@@ -58,11 +58,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_gaddis_9th_ch15_prblm1_employeeandproductionworkerclasses.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_gaddis_9th_ch15_prblm1_empandprodworkclass.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_gaddis_9th_ch15_prblm1_employeeandproductionworkerclasses.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_gaddis_9th_ch15_prblm1_empandprodworkclass.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_gaddis_9th_ch15_prblm1_employeeandproductionworkerclasses ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_gaddis_9th_ch15_prblm1_empandprodworkclass ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/Employee.o: Employee.cpp
 	${MKDIR} -p ${OBJECTDIR}

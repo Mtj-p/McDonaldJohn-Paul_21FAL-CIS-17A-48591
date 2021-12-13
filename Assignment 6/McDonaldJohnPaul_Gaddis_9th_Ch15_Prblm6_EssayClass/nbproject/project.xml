@@ -6,7 +6,7 @@
             <name>McDonaldJohnPaul_Gaddis_9th_Ch15_Prblm6_EssayClass</name>
             <c-extensions/>
             <cpp-extensions>cpp</cpp-extensions>
-            <header-extensions/>
+            <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>

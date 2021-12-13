@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=McDonaldJohnPaul_Gaddis_9th_Ch15_Prblm1_EmployeeAndProductionWorkerClasses
+PROJECTNAME=McDonaldJohnPaul_Gaddis_9th_Ch15_Prblm1_EmpAndProdWorkClass
 
 # Active Configuration
 DEFAULTCONF=Debug
