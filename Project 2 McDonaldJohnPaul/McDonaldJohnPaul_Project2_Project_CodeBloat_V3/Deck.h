@@ -29,7 +29,6 @@ public:
     Deck operator ++ ();
     Deck operator ++ (int); 
     void shuffle();
-    unsigned char*deal(unsigned char);
     void display();
     unsigned char getnCards();
 };

@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=McDonaldJohnPaul_Project2_Project_CodeBloat_V2
+PROJECTNAME=McDonaldJohnPaul_Project2_Project_CodeBloat_V3
 
 # Active Configuration
 DEFAULTCONF=Debug

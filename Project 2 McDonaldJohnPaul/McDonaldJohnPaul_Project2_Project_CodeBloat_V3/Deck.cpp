@@ -11,7 +11,7 @@ using namespace std;
 
 
 Deck::Deck(){
-    srand(static_cast<unsigned int>(time(0)));
+    
     nCards=nCards>156?nCards:156;
     nShuffle=10;
     index = new unsigned char[nCards];
@@ -76,3 +76,4 @@ void Deck::display(){
 unsigned char Deck::getnCards(){
     return nCards;
 }
+

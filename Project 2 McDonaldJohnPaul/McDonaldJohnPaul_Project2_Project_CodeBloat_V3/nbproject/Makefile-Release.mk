@@ -36,7 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Card.o \
+	${OBJECTDIR}/Dealer.o \
 	${OBJECTDIR}/Deck.o \
+	${OBJECTDIR}/Hand.o \
+	${OBJECTDIR}/Player.o \
 	${OBJECTDIR}/main.o
 
 
@@ -58,21 +61,36 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_project2_project_codebloat_v2.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_project2_project_codebloat_v3.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_project2_project_codebloat_v2.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_project2_project_codebloat_v3.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_project2_project_codebloat_v2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mcdonaldjohnpaul_project2_project_codebloat_v3 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/Card.o: Card.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Card.o Card.cpp
 
+${OBJECTDIR}/Dealer.o: Dealer.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Dealer.o Dealer.cpp
+
 ${OBJECTDIR}/Deck.o: Deck.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Deck.o Deck.cpp
+
+${OBJECTDIR}/Hand.o: Hand.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Hand.o Hand.cpp
+
+${OBJECTDIR}/Player.o: Player.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Player.o Player.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

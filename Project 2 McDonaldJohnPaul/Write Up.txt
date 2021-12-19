@@ -1,0 +1,6 @@
+I would like to apologize for my poor performance this semester. 
+I let the time get away from me and I have not demonstrated the extent of my abilities.
+Attached is a project with poor representations of the concepts we've learned,
+with no conclusive game aspect whatsoever. I attempted to follow your lead with your 
+card game lecture, and I got lost in finding the correct way to implement the hands
+to actually play the game. 
